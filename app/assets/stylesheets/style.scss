@@ -1,0 +1,83 @@
+
+#menu,.menuboton{
+    font-size: 22px;
+    background-color: blueviolet;
+    color:rgba(133,255,247,1);
+    text-decoration: none;
+    padding:15px;
+    margin-bottom: 10px;
+}
+.menuboton:hover{
+    color: white;
+}
+#contenido{
+    text-align: center;
+    background: linear-gradient(to right, rgba(31,12,31,1) 0%, rgba(19,9,41,0.62) 100%);
+    background-attachment: fixed;
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url(https://thumbs.gfycat.com/ComplexNiceBadger-size_restricted.gif);
+    /*background: radial-gradient(ellipse at center, rgba(107,53,189,1) 0%, rgba(107,53,189,1) 17%, rgba(82,44,143,1) 66%, rgba(37,4,77,1));*/
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover; 
+    color:white
+}
+.formulario{
+    background: linear-gradient(to right, rgba(133,255,247,1) 0%, rgba(0,92,250,1) 100%);
+    padding:10px;
+    margin-top: 110px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+}
+
+.publicacion{
+    margin:5px;   
+    border: 2px; 
+    color:black;    
+}
+
+img{
+    margin-bottom:10px;
+    margin-top:10px;
+    width:600px;
+    height: 400px;    
+}
+#public_image, #public_video{
+    /*background: radial-gradient(ellipse at center, rgba(17,17,17,1) 0%, rgba(17,17,17,0.94) 12%, rgba(40,20,43,0.73) 59%, rgba(108,0,171,0.54) 100%);*/
+    background: radial-gradient(ellipse at center, rgba(31,12,31,1) 0%, rgba(31,12,31,0.75) 65%, rgba(51,16,84,0.61) 100%);
+    
+
+}
+#public_text {
+    border-style: none;
+    background: linear-gradient(to right, rgba(112,213,235,1) 0%, rgba(32,198,227,0.86) 14%, rgba(32,198,227,0) 100%);
+    color:white;
+}
+
+#public_video{
+    border-style: none;
+}
+
+.textbox{
+    height:120px;
+}
+input{
+    border-radius: 4px;
+}
+.boton{
+    background: linear-gradient(45deg, rgba(255,138,13,1) 0%, rgba(255,242,0,1) 74%, rgba(255,242,0,1) 100%);
+    color:white;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:25px;
+    border-radius: 10px;
+
+}

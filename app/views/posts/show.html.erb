@@ -1,0 +1,21 @@
+<div id="show">
+<p>
+
+<% if @posts.tipo=="imagen" %>
+        <div id="public_image">
+        <img src='<%= @posts.publicacion%>'>
+        </div>
+    <%elsif @posts.tipo=="video" %>
+        <iframe id="video" width="700" height="450"
+            src='<%= @posts.publicacion%>'>
+        </iframe>        
+    <%else%>
+        <div id="public_text">
+        <%= @posts.publicacion%>
+         </div>
+    <%end%>
+ <br>
+<p>
+<div>
+<%= link_to('Editar esta publicacion!', "/users/#{@user.id}/posts/#{@posts.id}/edit",class:'boton')%>
+<%= link_to('Elimina esta publicacion!', "/users/#{@user.id}/posts/#{@posts.id}",method: :delete, class:'boton')%>

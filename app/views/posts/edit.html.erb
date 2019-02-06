@@ -1,0 +1,19 @@
+
+<div class="formulario">
+<%= form_for [@user, @posts] do |f| %>
+    <br>
+    
+    Publica:
+    <br>
+    <%= f.text_field :publicacion,class:"textbox" %>
+    <br>
+    Tipo de publicacion:
+    <br>
+    <%= f.text_field :tipo %>
+    <br>
+    <br>
+    <%= f.submit 'Actualizar',class:"boton"%>
+    
+<%end%>
+</div>
+

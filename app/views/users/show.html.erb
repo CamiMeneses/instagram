@@ -1,0 +1,27 @@
+
+
+<center>
+<div class="publicacion">
+<% @posts.reverse.each do |post| %>
+    <% if post.tipo=="imagen" %>
+        <div id="public_image">
+        <img src='<%= post.publicacion%>'>
+        <%= link_to('ir', "/users/#{@user.id}/posts/#{post.id}")%>
+        </div>
+    <%elsif post.tipo=="video" %>
+        <div id="public_video">
+        <iframe id="video" width="700" height="450"
+            src='<%= post.publicacion%>'>
+        </iframe>
+        <%= link_to('ir', "/users/#{@user.id}/posts/#{post.id}")%>  
+        </div>  
+    <%else%>
+        <div id="public_text">
+        <%= post.publicacion%>
+        <%= link_to('ir', "/users/#{@user.id}/posts/#{post.id}")%>
+        </div>
+    <%end%>
+    <br>
+<%end%>
+</div>
+<center>
