@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+    #before_action :authenticate_user!
     def show
         @user=User.find(params[:user_id])
         @posts=@user.posts.find(params[:id])
@@ -26,7 +27,9 @@ class PostsController < ApplicationController
     end
     def destroy
         @posts=Post.find(params[:id])
-        @posts.delete
+        #if current_user==post.user
+            @posts.delete
+        #end
         redirect_to user_path(current_user)        
     end
 

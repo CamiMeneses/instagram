@@ -1,0 +1,25 @@
+<center>
+<div class="publicacion">
+<% Post.all.reverse.each do |post| %>
+    
+    <% if post.tipo=="imagen" %>        
+        <div id="public_image">
+        <img src='<%= post.publicacion%>'>
+        </div>
+    <%elsif post.tipo=="video" %>
+        <div id="public_video">
+        <iframe id="video" width="700" height="450"
+            src='<%= post.publicacion%>'>
+        </iframe>
+         
+        </div>  
+    <%else%>
+        <div id="public_text">
+        <%= post.publicacion%>
+        </div>
+    <%end%>
+    <%= post.user.email%>
+    <br>
+<%end%>
+</div>
+<center>
